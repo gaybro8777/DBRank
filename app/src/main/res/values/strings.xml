@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Zabri</string>
+    <string name="app_name">DBRank</string>
     <string name="create_button">Create</string>
     <string name="read_button">Read</string>
     <string name="total_rows_count_label">total rows currently in DB\ntook: %1s seconds</string>
