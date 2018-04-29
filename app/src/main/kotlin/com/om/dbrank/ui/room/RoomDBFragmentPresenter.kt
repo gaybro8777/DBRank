@@ -1,10 +1,12 @@
-package com.om.dbrank.room
+package com.om.dbrank.ui.room
 
+import com.om.dbrank.data.room.RoomDBRepository
+import com.om.dbrank.data.room.RoomUserEntity
 import io.reactivex.Scheduler
 import io.reactivex.disposables.Disposable
 
-class MainActivityPresenter(
-    private val view: MainActivityView,
+class RoomDBFragmentPresenter(
+    private val view: RoomDBFragmentView,
     private val roomDBRepository: RoomDBRepository,
     private val backgroundScheduler: Scheduler,
     private val mainScheduler: Scheduler
@@ -39,7 +41,7 @@ class MainActivityPresenter(
             )
 }
 
-interface MainActivityView {
+interface RoomDBFragmentView {
     fun notifyOperationFinished(nanoTime: Long)
 
     fun updateTotalRowCountLabel(size: Int, nanoTime: Long)

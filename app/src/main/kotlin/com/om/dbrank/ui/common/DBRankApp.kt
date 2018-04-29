@@ -1,10 +1,7 @@
-package com.om.dbrank
+package com.om.dbrank.ui.common
 
 import android.app.Application
-import com.om.dbrank.dagger.AppComponent
-import com.om.dbrank.dagger.AppModule
-import com.om.dbrank.dagger.DaggerAppComponent
-import com.om.dbrank.dagger.RoomDBModule
+import com.om.dbrank.data.dagger.*
 
 class DBRankApp : Application() {
     companion object {
@@ -18,6 +15,7 @@ class DBRankApp : Application() {
         component = DaggerAppComponent.builder()
             .appModule(AppModule(this))
             .roomDBModule(RoomDBModule(this))
+            .realmDBModule(RealmDBModule(this))
             .build()
         component.inject(this)
 

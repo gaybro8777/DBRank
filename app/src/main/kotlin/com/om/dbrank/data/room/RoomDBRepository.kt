@@ -1,4 +1,4 @@
-package com.om.dbrank.room
+package com.om.dbrank.data.room
 
 import io.reactivex.Flowable
 import io.reactivex.Single

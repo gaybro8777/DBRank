@@ -3,4 +3,5 @@
     <dimen name="spinkit_loader_dimens">50dp</dimen>
     <dimen name="margin_1">10dp</dimen>
     <dimen name="margin_2">20dp</dimen>
+    <dimen name="viewpager_height">60dp</dimen>
 </resources>

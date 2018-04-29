@@ -3,4 +3,7 @@
     <string name="create_button">Create</string>
     <string name="read_button">Read</string>
     <string name="total_rows_count_label">total rows currently in DB\ntook: %1s seconds</string>
+    <string name="viewpager_item_room">Room</string>
+    <string name="viewpager_item_realm">Realm</string>
+    <string name="viewpager_item_firebase">Firebase</string>
 </resources>

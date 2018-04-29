@@ -1,14 +1,18 @@
-package com.om.dbrank
+package com.om.dbrank.ui.common
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import android.support.v4.app.Fragment
 import android.view.View
-import com.om.dbrank.room.RoomDBRepository
+import com.om.dbrank.data.realm.RealmDBRepository
+import com.om.dbrank.data.room.RoomDBRepository
 import javax.inject.Inject
 
-open class BaseActivity : AppCompatActivity() {
+open class BaseFragment : Fragment() {
     @Inject
     lateinit var roomDBRepository: RoomDBRepository
+
+    @Inject
+    lateinit var realmDBRepository: RealmDBRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

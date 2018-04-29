@@ -1,13 +1,13 @@
-package com.om.dbrank.dagger
+package com.om.dbrank.data.dagger
 
 import android.arch.persistence.room.Room
 import dagger.Module
 import dagger.Provides
-import com.om.dbrank.DBRankApp
-import com.om.dbrank.ROOM_DB_NAME
-import com.om.dbrank.room.RoomDB
-import com.om.dbrank.room.RoomDBRepository
-import com.om.dbrank.room.RoomDBRepositoryImpl
+import com.om.dbrank.ui.common.DBRankApp
+import com.om.dbrank.ui.common.ROOM_DB_NAME
+import com.om.dbrank.data.room.RoomDB
+import com.om.dbrank.data.room.RoomDBRepository
+import com.om.dbrank.data.room.RoomDBRepositoryImpl
 import javax.inject.Singleton
 
 @Module

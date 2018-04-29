@@ -1,9 +1,9 @@
-package com.om.dbrank.dagger
+package com.om.dbrank.data.dagger
 
 import android.content.Context
 import dagger.Module
 import dagger.Provides
-import com.om.dbrank.DBRankApp
+import com.om.dbrank.ui.common.DBRankApp
 import javax.inject.Singleton
 
 @Module

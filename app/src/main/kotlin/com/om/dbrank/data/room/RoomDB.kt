@@ -1,7 +1,7 @@
-package com.om.dbrank.room
+package com.om.dbrank.data.room
 
 import android.arch.persistence.room.*
-import com.om.dbrank.DB_USER_TABLE_NAME
+import com.om.dbrank.ui.common.DB_USER_TABLE_NAME
 import io.reactivex.Flowable
 
 @Database(
